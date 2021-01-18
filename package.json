@@ -6,14 +6,18 @@
   "license": "MIT",
   "repository": "AndersDJohnson/nwdiff",
   "scripts": {
-    "build": "babel src --ignore '*.test.js,__tests__/*' -d dist",
+    "build": "babel src --ignore '**/*.test.js,**/__tests__/**' -d dist",
     "test": "jest"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "jest": "^21.2.1",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "jest": "^26.6.3",
     "strip-ansi": "^4.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "diff": "^5.0.0"
   }
 }

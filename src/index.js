@@ -1,4 +1,4 @@
-import chalk from 'chalk'
+import * as chalk from 'chalk'
 import { diffChars } from 'diff'
 
 const wrap = (added, value, {
@@ -25,7 +25,7 @@ const nwdiff = (before, after, {
   endInsert = '+}',
   startDelete = '[-',
   endDelete = '-]',
-  color = chalk.enabled,
+  color = chalk.supportsColor,
   colorContext = 'gray',
   colorInsert = 'black',
   bgColorInsert = 'bgGreenBright',
@@ -34,7 +34,7 @@ const nwdiff = (before, after, {
   colorDelimiter = 'black',
   bgColorDelimiter = 'bgWhite'
 } = {}) => {
-  const myChalk = new chalk.constructor({ enabled: color })
+  const myChalk = new chalk.Instance({ level: color ? undefined : 0 })
 
   const options = {
     delimiters,
