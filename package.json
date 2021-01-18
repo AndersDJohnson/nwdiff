@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "repository": "AndersDJohnson/nwdiff",
+  "files": ["dist"],
   "scripts": {
     "build": "babel src --ignore '**/*.test.js,**/__tests__/**' -d dist",
     "test": "jest"
