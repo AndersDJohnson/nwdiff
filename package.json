@@ -1,11 +1,13 @@
 {
   "name": "nwdiff",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate word-level diff output between two strings like GNU wdiff.",
   "main": "dist/index.js",
   "license": "MIT",
   "repository": "AndersDJohnson/nwdiff",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "babel src --ignore '**/*.test.js,**/__tests__/**' -d dist",
     "test": "jest"
