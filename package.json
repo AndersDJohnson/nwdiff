@@ -1,6 +1,6 @@
 {
   "name": "nwdiff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate word-level diff output between two strings like GNU wdiff.",
   "main": "dist/index.js",
   "license": "MIT",
